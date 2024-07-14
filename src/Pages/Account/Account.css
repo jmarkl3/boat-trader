@@ -1,0 +1,19 @@
+.signInForm{
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    padding-top: 0;
+}
+.signInInput{
+    width: 300px;
+}
+.signInInputButton{
+    width: 300px;
+    background-color: rgb(0, 0, 56);
+    color: white;
+    padding: 5px 20px;
+}

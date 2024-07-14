@@ -1,0 +1,138 @@
+.filterBar{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: var(--backgroundColorTransparent);
+    box-shadow: 0 0 10px black;
+    transition: 1000ms;
+    z-index: 3;
+    background-color: white;
+}
+.filterBarOpen{
+    width: 300px;
+}
+
+/* Filter Rows */
+.filterRowDescription{
+    user-select: none;
+    cursor: pointer;
+}
+.fade{
+    opacity: 0.0;
+}
+.filterRow{
+    border-bottom: 1px solid rgba(167, 167, 167, 0.8);
+    position: relative;
+    padding: 10px;
+    min-height: 20px;
+    text-align: left;
+}
+.filterRowButton{
+    width: calc(100% - 20px);
+    width: 100%;
+    /* color: white;
+    background-color: rgb(88, 127, 255);
+    background-image: none; */
+}
+.filterRowInput{
+    margin-bottom: 10px;
+}
+.filterRowButton:hover{
+    /* width: calc(100% - 20px);
+    background-color: rgb(134, 162, 255);
+    background-image: none; */
+}
+.filterRowImage{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.filterRowImage img{ 
+    height: 100%;
+    width: 100%;
+}
+.filterRowTitle{
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 10px;
+    font-weight: 600;
+    transition: 1000ms;
+}
+.filterRowOpenButton{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 25px;
+}
+.filterRowInner{
+    padding: 15px 0;
+}
+.filterBoxTop{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 120px;
+    position: relative;
+}
+.filterBoxTopMobile{
+    height: 60px;
+}
+.filtersTitle{
+    font-size: 26px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    transition: 1000ms;
+    user-select: none;
+}
+.filtersTitleRotated{
+    transform: rotate(90deg);
+    padding-bottom: 0px;
+}
+.filtersTitleRotatedInner{
+    position: relative;
+    padding-left: 100px;
+}
+.filterBarButton{
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(5, 17, 85);
+    border-radius: 10px;
+}
+.filterBarButton img{
+    height: 100%;
+    width: 100%;
+}
+.filterBarButtonMobile{
+    right: 5px;
+    top: 15px;
+}
+.filtersBox{
+    padding: 10px;
+    transition: 1000ms;
+    height:calc(100% - 130px);
+    overflow-y: auto;
+}
+.ageFilterBox{
+    display: inline-block;
+}
+.filterCheckRow{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+.filterCheckRowText{
+    padding-left: 20px;
+    display: inline-block;
+}

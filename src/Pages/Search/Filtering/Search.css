@@ -1,0 +1,177 @@
+.searchPage{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.userTile{
+    height: 360px;
+    width: calc(100% - 20px);
+
+    margin: 10px;
+    border: 1px solid black;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+    vertical-align: top;  
+    position: relative;  
+    
+    transition: 500ms;
+}
+.userTileChat{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+}
+.userTileDesktop{
+    width: calc(33% - 20px);
+    height: 700px;
+    display: inline-block;
+}
+.userTileAdmin{
+    height: 200px;
+    width: calc(33% - 30px);
+    width: 200px;
+    display: inline-block;
+}
+.userTileOptionsButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background-color: rgba(195, 210, 228, 0.514);
+    height: 25px;
+    width: 25px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.userTileOptions{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(220, 233, 235, 0.705);
+    height: 0px;
+    width: 0px;
+    transition: 500ms;
+    overflow: hidden;
+}
+.userTileOptionsButton:hover .userTileOptions{
+    height: auto;
+    width: 200px;
+}
+.userTileOptionsOption{
+    width: 100%;
+    transition: 500ms;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.788);
+}
+.userTileOptionsOption:hover{
+    background-color: rgba(220, 233, 235, 0.705);
+
+}
+.userTileText{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    min-height: 55px;
+    font-weight: bold;
+    background-color: rgba(25, 98, 255, 0.452);
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.userTileImage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+.activeBanner{
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+    color: white;
+    background-color: rgba(31, 182, 31, 0.5);
+    padding: 5px 10px 2px 5px;
+    border-radius: 20px;
+}
+.activeBannerCircle{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgba(31, 182, 31);
+    display: inline-block;
+}
+.activeBannerCircleText{
+    vertical-align: top;
+    display: inline-block;
+    height: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1400px){
+    .userTileDesktop{
+        height: 500px;
+        /* width: calc(50% - 20px) */
+    }
+    .userTileAdmin{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .userTileDesktop{
+        width: calc(50% - 30px)
+    }
+}
+@media screen and (max-width: 725px){
+    .userTileDesktop{
+        width: calc(100% - 30px)
+    }
+}
+
+/* @media screen and (max-width: 1400px){
+    .userTileAdmin{
+        width: calc(50% - 30px);
+        height: 280px;
+    }
+}
+@media screen and (max-width: 900px){
+    .userTileAdmin{
+        width: calc(100% - 30px);
+        height: 280px;
+    }
+}
+@media screen and (min-width: 1800px){
+    .userTileAdmin{
+        width: calc(25% - 30px);
+        height: 200px;
+    }
+}
+@media screen and (min-width: 2200px){
+    .userTileAdmin{
+        width: calc(20% - 30px);
+        height: 200px;
+    }
+} */
+
+
+
